@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Perodic Table </title>
+   <style>
+      table,
+      tr,
+      td,
+      th {
+         border: 3px solid rgb(255, 0, 0);
+         border-radius: 10px;
+         margin: 50px;
+         font-family: 'Courier New';
+         border-top: hidden;
+
+      }
+   </style>
+   <style>
+      body {
+         background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYZGRgaHCUeHBwYHB4cGh4cHiEcIRwaHCEcJC4lHCQrHxocJjgmKy8xNTU1HCQ7QDszPy40NTEBDAwMDw8PEA8PEDEdGB0xNDE0MTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAGAAIDBAUBB//EAEcQAAIBAgQDBQUGAwUGBQUAAAECEQADBBIhMQVBUQYiYXGBEzKRobEHQlLB0fAUI2IzctLh4hVDgpKishckU5PxFjQ1RHP/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALuITWtTCYnIgX7p+vKquJXfzqxathkymgjwyxeuLtmUEDwBIJ9Sd5PTlV5m0rJwzfzlJ1aChPgNV+J5+B61sOsiaDzP7QUi9bbqpHzH61mYbFO5XOxaBAkzA6fKtz7Qbets+JH7+FDOCbWgLMMwIqlxL3wetdwT/CpOIroPOgpLNToKhSp1oJUJqVATUdurlpCDOwjc/lQcSz1NT4nFH77EkDc66efrVjAcMuXiQjQBuxgj6VzH9lLkhUzXOo0Cnz8KCpZvB9j6VOq1ZwnYVpzqPZOBpBLKTzBB5eVVcS5S57NxlYfCfA8x4/TUUDhtTppMKSigeu1dauLSagcrVK7sxljJ6molFPSg7UixTQtSBNKBVwmn5aay0CVdakUVxBTqDqEgyDGsinEljJMmmBafQIikBT2BrooIyKYUirASmsJoK2WlU+WlQWcWknTlVnBJpqPjXbq6Gni5mCgToI19KDC4m2V8+wVlfTwMQeslgPhWyx7vzrO4zZCyxjVWGu22gPgTFR9nsQXtZW95O6w56bfvwNAPdukm2D0cH4yPzoLtJrR92xtTh35xB+BFAFptaDewQNX71uUNZeDuaCtWye7FBnpUyioskGK1MZiRcZMobRY72pOpPXxoIsNbB325+VV+K48KCAeUDnV94RT48vH9KC+KYkvcVQNZEeZ+nlQe7dnMILeHtoNe6CSdZJ1JrYGgqnhlKW1yiSFG3PShviGM4h7RAiKFJgg5eYmdOnnUBU5MTXkv2lX++hEhgd/DXf8AfOi/tlxm/g7drKmdrhKneFIE8t+fwry/tVxRr7IWADqSG3125fveqCnhdzOiknWNavhIof7O4jQSf3+/pRTjr4dswmIA1350Fc0opAGurQOVacopoqRaB0U9RXIFOWg6xpZa6pgg9CD8KkxVwOxYTsND4AfpQMVa6EriGnzQcRKky01akWgbIpwppNPig4dzXAmtSo0MCdgeVdvXMzEjn+lAzLXK7m8fkKVBpslMtJrXVujY1YsWhuCKgzOLW4UNvBkDxFC/Br4t4prfJjGv4tx85FGuLwjFdFmgLj1s2riuWysAInmRqfUSOe0dKo2uO4XNauJ1UxPWK8vRdq9cxF0XLKuNnUH4ivKr1uCw/CxHwNBcww21Fa9ldKxMNWxg1OkGghuJ3jVvCGKZiB3tRGldQxQRcRxZ1HPmfyHSh2/eRSraSCNeu/0rT4lgnIYqZ6D60O2MMz3FSIMjNIgL4nwoPe+x+Ld8NbdtSV89jp8orZd8pmCTv1IHOKAuyfGPZ5rRGi6abA8/ma1OO9pvZ91ASTEcgevjQR9oO0eGuNZQM3tM/uMjKwBBnMGEiIBrzXthiFOIXJEpMkeMafKp+KY11vi62RiW1yhgR6sOnKsvjKKXLg+/y3g8/OgdYxTKEZdyddR15dK9Aw6EIubeNaGuyfAwx9rdWQACg5DxPwFFzr8qCAilFJhSNAlFTKKjWpAKDoNOFNinAUCNdJrgWuBTQSoYqRajSpFoHAVIlMFSrQcjWka6KT0HMvOpLcUw09UoG/velTsgrlBddARrVBQ6E5Zjxqb20GJqzaINBWe+7oVMqDzGlBXanhaC0AJ7rSJJJ1ksT6kD18K9DukAaChDtCMyup2In/lkz8vUSOdBv8BsKMNkCRlBXLmJMHKYJPPU7aa+FDOO4NZF55tg5wp0ZoBIuSRr/QKb2T4o5cozsQU0kk6j6aCqfafFOtxWDuJBEz0mP+5viaBz8MtBGdUg5GYatoQiMI15EmsnCuRT8HjbrI9pEe67grozGFIC+6NNANztW3wvsndibrqh/CO83qZAHpNBRvNK76iq4eidezyEhM7525d0/KtXhHZJLbh3YuymQpACzyJHOgHbXBnAQvK+0YADmARMt08vGtTA9ngATcQZjMn1IX5RRPxDDB18RqPMbV3C3ZUTvzHjzFB5Z2g4c+FcFCcp1joZ2FWuNIyOoDGQknPGmrAgR5bDTz3oz7Q8KV1zfh19OYrzjFmGL6ydAOgHIDp+tBl43Es2Uv7rbTof1q1wMol0Z2XL90sfzrPxffUKdl1+Z/X6VAqhnCTzgHxig9TRwQCpBHUGfnXWahbgz3LXdMkfKiZHDa/GgayzTYqUCmlaDltZI8atYqyEbKJ2G+9VlFOjrQdB8KkBFNA1p4FBxhSUU8ill/YoOov7/OruBtqxgiR5mBqOm9Ukqa25XUEjyoNU4ZToRoFgGT1fbx051IMKkxl+Z6L+tZSXX/G3x/fU1YW628n4/vpQdxtkLECJmfRiB8qrEeFWMTdLkaRHiT4zJqILQNApy05VrmU0HZpU7L+/2KVQULr97cQacmJymsJsS7JbZQTKKZG21WMPiSpGcFc2oJ0kVQRriZiqPELSlZj1G/nIqXDOpXQ1y+oy6k+VB5/gLxtXQTpDanlH5yDR5g+HoV9o6K7TpnEhR4A7HnQmcGv8Q1y6QLdvvvz1OqpHPy6AVqpx8XYKghY28OXqaAjRwNFUKOigD6VR4ljgPvR9flWfiOIi2jXXbKI2Gmnj1oZw+OvY8uLBFtF0JIzOZ+S0B32YdHZ7iySvdkiACdTHp9aJbrRQ72D4d7HDhS2ZizMzHcksfygelEWJ7uu1QZGNxWTMQZ7sxuAf39alV5AdPvCRG0/TXaax+LYtApYr3di4Gx/rXx2kdayuzeOuNnWRcVDou/dnQpHOOX0NUENi9ibgb2tq1bQnRQ5dyOR0AUT50I9seEupRkWQ28UePilZAUII/Pp4Hwp+HRXEMAQRzFQeDcStlHysCp1YeM8wfl4VRLHOpBgE/A17R2v7LLibJVABdSWtnbzQno31APKvJeH4Uu62gIfPBDaQQe9PSIPwqg+4DfW/anTOsq08mjeOnOpjmtkDSCRrGkkxHrNZXCsE+HxDNmGVnKOCRkyFVZXB5mWAjxNGt7g7uhWQOhkSJJg6+IoM5YInlTTSwuFdFYMIAbKuskyJ1rpGtA1VqTLpSUU6gSCngUlpwoFlroFNEzpTmUgkEa+Oh/f60DlWnRTEapQaB6CpBStoazcZx/D2mKl5M65VJE+e1BqxXMutYb9qrO+Vz6L+tMPau2BItufhvQb+XWpclZuG4ujZRlcExoQCdfI1qWHVgYMxoeoPQ+OtQMy0qmilQC3YfFC5g0UgE2yUPodPkRVzi2FzhRlAyjSPT9KFPs0xJD37M9HA+R/Kj54qgUtq9to5Vr2cUSOp8vkKsX7KsZqpg7MXcx91FLevIfn6UAd24ZrZI5OwBjwgx9Y6yelaXCsOLaLm94jM3geQ9Bp8azMXi1u/xBfX2N1XGnIjT4ZGPlNR2OO+1RyumUUFXjvEfb4gWif5ajUcix0BPkYon7Hog1SBMK4HXXKfDUMPKKAuBYj+c8wSdRm1BjkflRF2XxzW8YUYR7Rfd6NAb5EMPU0HqnAni3HMMw/6jV7H3FIBbNG3drO4Y/v/AN6dOhANaFzUeXhUA3xHCWXVmJdQBqQpOm0ESQfUUM9j3CYl0UypJKHqsA/WdKOMRaEZmYL4kxQrdxSfxVp0ZBBZDl3YHYmB1HzqggxakS6DX7y8ng/JvH08rXCeJ27ulthnU99CQHXwK/nseVMjTWJj86C+McIz40OhKvMypII05Ea0Hpr66xrXmvbLgyWMSmPyTbzTdQQT7SIRwDpqxEzzA/FRhbxF63bVmm7A72yuB4Rox8DHnUFniNjFK6qVdGBR1PdYA6FWU6g1B5+O0dt++UctMgnISGyKuYeOh1jnRh2K7UpiUZCGD2z96JKZ2IiDyBArzLtNw+5g7/sW1Qa22j30JJEnmQZB/SKXZvixs4tLuyuQrjwOh/fhVHr3H7fcUqRmzCRI/ARPgaB24vcDFWGxIJo2x9uVYaa5cs7GSIM86CuIYu2c0jvg5XHMEaSfhHpQPXjD1KvGH3iqasmTujWpkxCEBTQTDjL9K6ONOOVMxKW+6VM9YpxdG0iIoJk44wg5ZAM+ccqff7QM7yVjYRvtpUb2EDCNRSLWy20CgkXjLfh8qsLxo9Kovcth4BkVG91WmAQPn8vzoNW72jyo5+9lMeZ0BoGt4jLIYaE8/HrW2+GzaRp4mKa3DQe6yqQdy2nzXUelBSt4q0I5ek/CKZiOKp9xC3i2gnrAqw/ZsNoj5DyDywj0GYDxAbeqHCOH5icxBUHcfe8ROwO+utBocN4ldZw7hSgMxsDFE/ZvikNedxGfKQJnYR+lDmMuADKugG/Klh+IIinMGJMQFE6jfy/zoDv/AG0lKgT/AGoOhHgSNPlSoKPZ/EixxITorlkP/FqPmBXqYtSZnSvI+19n2d8OJmQw8waO+DcXcqpIzLlBnwoCVMEOQ9TWXxLEoiXChnL3Sf6t4+B+dVcXx/NKh48qxcU2XB32n3nY7/0oKAT4Lif5txiwCu5LA65lWYAHMzI011qzdxCPhr7oiI9qFOVcsoxhQQBEgyJ8POM2zjsIllP5Za4BLMT97fSR15dPE6EmN4bbXC3rtvKFuWUdgrZgH72oJOnvN0mAIk0ARw+UuK2+8jrpt8Yrb4nxGcRbuquUqyhoM6oFOh6EE9fWsC1dIidY2rZ4oHbDIxKsqnMMqBSM3vBiB3oMb9TQexcHvzA/EoPw0+hFbTvA1+VA/ZTG57NlidoUnzEeveFHBWVHgNqgGOOYe1dc+1d5Ed1ToOkxpP61h4zhSWLbOigAMry85oBGnhzol4nxa3ZIGjuOQ2FefcYvXbhdlve0VtSmzjeBl5geE7VQf4G5nAJI2/PempZm87t7q/oDyrG7P4z+Wu0kfppRPdZMxykajXKxOux8jEUFm3cBUEGQZiPKvPe2/BXtvbxdgsjiFcocp6K2m+uh9K9BTKqKqjKAAAOgA2qpjbIe2UiQVMHx61AC3rGIxllUxARyklHACuG2hssAhtiI5A0JcQ4WqpnHdI5E8+g8a9g4RhB7MSBI5fDWvPe1KRdu2VE5bkkDfITmgSNwCKoKOC41sTgEdSM9sgMOZKEfUQfWm8QSxm9s+RQyjUopk8wToSdj9KCeC8RfA4kKzN7PNqASFIYd1yCJPdING/HED2y1rJLd9JgqrjWR8zQRLwW3dQMpKGdipUNPuwskqY+PSKevYpiQQ6weZB+lXOyWKUI1tnBZIbOxGZs3vEk+IPpFEeIxahoSCI5EazuBQBHG+D28HbD3rxbMcqqi6k+p001qTg/A3vqGtg5T95tF+PP0o2tX7RZA6qWYNlzAHQEB1E+GSRVvimf2D+ynPkOQLuGynKR5GNKAQxPY66oOV0Y9FJBPlIArMw3Zq47vbLBHABUPK5t5jSenxq72N7VYi7ebCYpcjlWy90q+ZdSrDkcskeVUu1vEVu3LSC6uZLZLsSxysDGWEB7x8tIoKHEOD3sP79tgJjMNV9Su2/nXcEGmAhJj8J+Ir0DhHDcQiKGvlxlEpcAcBo2mM3hGaKgx3C8Vniw9qyjTnZUzXJPNS5yjXwoB3D8FvsM7Zbacy5CgetU8RxHh9j+0vm+w+7hxI05ZtB8WraxH2e+2dWv4q/d1BIdwR4gd2F9Ipt77MsMGJV2Vd4kmOuu/WgxMd2rv20VsNhUs22HduPDt6hdEPnPrVLAWDkLvOZzLFAoGvgNB8KxH4m1q4y2mYJMAOZJAGpI2Gs1atcZXfJE75DA+BBj6UEuPKrEEx0/f70rPwtw5mgGBHLXpp4kwI6mrt/iFo6lHPhpHxq3gsESntAiqrGVUHMRpu5/FB25T1JoIf4INqVBJ8vh6beldqTN4mlQc7e4WQH6GKopxq6cFbs2E74lXbwB0HwiintHhM9plGumnnQDwHGm1dyN7r6EdG5UFN8JieZb40VYJGHDD7Rj/AGjEncwIrUtpI2rmK0w2SBGcwPMjf40FL/a2DtWvZrw+6yNzuAd/kWOs5vp4VQ4VimuYXEW1XIpKqoJ1VSW7pnxIAn8XWKbj8WTv118yAah4G0LeYzDXbarHVcxY+gj4gc5ACpG87gwfMb0Rvjc2C9n7KIMhwdGic0yN9dgSNBtzpdoMLkvMw91+9686n4cbt22LKkFEJfJm127xQHfQSYoCTsPfLYZ0B7ykkDxBzA/OvS7V4XLOhKq6gyNwDXk32c3BndOekesg/Sj7sxiZsvbckm27Iw/pmV/6WHwoOW+zOGcsPaO0e9B08iTQ5jeM4XDOUsYcsymM7aCRO3M0XcSs5reS2/sk3Z4EkdBP1rFS1Zg20u3LpjvM6m4gXmAsqg9Q3lQYfCeOWnvMHhA2vd7qzz2211oz4fdtHRGmTJPKB5Vh4zsjhwg9lYf2ryyszEKg0kvEIu2ixpNb3C+GCzYORlZtmYGdegOkx4UDsVjScuSCS0DppVjDXJUCJ1iY0+u1YV7EkOqkQFI7vQ6yT3R128PGn8S4kUVcu8iQeWpjTSg1uFYhe8oOqsQT4SaAO1OGtXsbiGd7iMGVQqqHBAVSHlmGXcDKBAidZo44UiSWganNoY72xIj6V5v2qxMcRxK6auoHSQiCgx+0QX2hyghYAQHUhEUKJIETCyfE1r9kuMqItXSSnLXY9daq3mciJInpWPjNHzUBGx9lceGlc3dI003jXpRJgeLoFBLa9Bz1/SghbntkCggXAZUkwGWIKmdm2IPOIp1jAOPeePIE/pQE3aPi1x2Syi5jedWtMCVZLkhSQRsCrCR0Joy4Vwq6gDLjLjabOqsv5H515zh7xtHPmZ3t95ZUQGjQ/wDwRRB2S7YSWS/3doaDE7HkY3HOg38NwB1vNifbMcQTLOqgLl5LlM6QANDOnKsDEdhwzvcN4hmcsYUAanYANPM8zWvxvthatOqISxzLnGU6K3mOms6bVWw/abDs+pO432BMxqdATQEL8UxaBR7JHEASGKliBqTJ0pjcfxon/wAgCP8A+yCsvEdorIhluDTSMykT0MGmp2mtuCodZ8RIjxjagv4rtZi7eUvw8wxgZbysZPurCgmT08Kst2gxkf8A48weRvp8II38K4OIoq63F25df3NU7vGQW9lmzSNDOXWfHbagDuK9n8Zibxc4b2QIAyhlgROpM6yI+A9YE7KYlTGQHXXLmgbbyo6Uf2+JakAgkab6zUr3D3k1gyDvzEQCNqDz/Ddlr105Ue3mG6kt3Tz1CkHXn+lW7PZrGYYlu4UPvBWmRyOw1G80a4NEtoiKgQIIGUbAnXU667nqd6i43xLKkAyzGACNPjGlAA3cQASNNK7TMZg2DsI58hXKD0m9wcFTL66QdhrPLmdK80412SK3X/mhe8SO4ToCmuh/rGletpid+78z/V+tefdtuKlH0QGQQdY3KeH9HzoL/DMMTalnBZBDQIk5mWd9Pdn1qtiLI9lO0XPT7prMwPaC3lIZgr3SFhQ/d77MJJGX73LrWmCRhnDQTnkeUDWgCsY+g2Mty5939RT+GIWtMA0Fryg+WUNp46+cDT71MxQAHrofPY/P51Y4Xb/lI0H+2JXp7ig/9p+B2+8EnazD5Et65oME+B5fGsnhVsHvM7IFlcyDMVzA8uQMQTyGtEfaO3msMOneHmNdKH+zJliC4RSVBOZUIOoUqWOpEnyBJ5UFvsU+TGlY5HlroQR8jRS+MOE4g6vAtYkAzMgPsrGPGQfMdKFMIhtcRKg65yJJ12MT8K0vtDul7ttmH3OhHOTofOg9Ea0HGQgHUEAmAR0MdKs3cRbsoR3WIAORYgRtMeNAPYzib3rbo7Zjbga7lCNJ6kEETWhhsUqkoxABI7xOnk1AUX7L3ktq+9xpbllTePI6D4Vu2kRECgDKvLp5ViYjiSgqlt1GkZ9CAPCr1jIVgPPNjtJFQXb2HS5o6Kw/qAMeXSs3EdmrbPmQEka5CRl013Ikcqs/xAWYO2sfStLh7goXPOZ8Asg/OaDDGHtrfyswF0LmKBge6dM5A2GhE15D2gwzNib1xyBndnXKZlSTkIieQA9KMjgsY74nHIhd7qOttFIzKjDLbkMR7oCmBOoJ51gvwLHXGz3MNcDARohA0JPj1qjBs2bziJUJ+IEEn/lO9WnwSbFQfTX48qtY/D3MPBey9vNoGZCgY9JI169ap/xYILuYUaTzY9B1oGPw1I7sqeokj1B3rS4LjZItXoJJhHnf+l5205mslMW933AEQbu371PgKuYjBhlYAhzGs6fSg2eK20W25ZSIB2MGRy12rH7Iol3ElbjAI0Nkk5s0iCoGugmfjU+A4gbti5buqc1tDqdcy7CepB0nnoetZnZjiDYe9mRFdmU6MYErLb+nPwoCfinDcO14PbWCAHKOS5aC0zJORSEidp0qxf4RhGc9zKddELKNMnIGNM4+NY9rtNcZ1X2SI0wCrQQe+J0EH3joenjox+0twvmZE5ySSYzFJJAE6ZJ8ZoKnGsLbtZQjPLFisnRYbK3jyFUHskCIefusD3IPhBnXxq92jxqXWQWyCqgyQrASzEkDOAfGfGoeGYXM6y22oWNDAkL5nb1oLtmwjowDnOoUnNohI0gGdx1rLa4yvnznOdcwPpy8q0+IKEYBEKDPIV9Tr+KTrG1Zl8/zJcc9cug5kAeEH60FvA424XWLhDkxDFiSTtrJG/WNtqKRxHFlAUUNHdYhlBDjcmQsDw+dDCW3V1ZQORUQCQOmo386kvsAx77o8yQRrruZB8elASW8bjdjbbUQOQB/vBoCx61k8TxWJ9oEdWBU7BTv4STO9Nt8RuIysmJDEa65uUe8CNt/1FVcVxG690OXUuSNoA5czoKCb+NvH3keefcb9aVTXOKYiTKD/lFKg9QI0oC7a2AQNKPHPKg/tSJGnKg83dZUjmNqLuD8Ra/g7qgjOoAO0gwwnXyFDrWJYitHsda/mYm3PvWwwHXK3+qgwMKl+9Kgg5YG34Yj6CiTg+FcWbSN/wCo5PUkALA8ABJ8WE8q72VwwF2+vMMPnPL0ogxIGe2saqHJ8BI0/PwjnIgM/GWWyEEaEcz4UIcCwb3He2jQwViVmA4UiUOusztzIHhRw7Fm2zDy29TQPiXa3ibuWNQRHKHA0/fSgj4jiT7XOshojXeViN+cVa4Pwm9jHLFmyKYa45LRzyLO5122E67iZMPwn+Iu2LSG5mfW4zrtMl2WJ7sDSdya9QwuES2q20UIiCFXoOZk7knUk7k0GJwbg64Z1ygDP3fE8xPX/OreP4Ct2SCUY8+Rjl41qYmwsZo8o+oNTWrmbI0axJHiN/SaAEx/BcTbnKM4HMGD8OelRpxu6ijNmQTqGn6xFHjjOvPf9/vw8ap4/AhhlyzO/wA9aDFs9pkyESNBm56iN9uYoh7P9oEu4CM4zFGBE65mmfrQ3iezKONEynaV085jepeHdgrJ1BfMR7wJ/Kg9VwlpVQBdgKnmvLk7c3sM72GQ30tsUV1MOcujBgdCQZE+FamB+0jDM0XVuW55shI6alZA86gNcVhkuIyOqujCGVxII9a8l7e9mcPhmW5bLZF1eye8qgwFdSeRbSCT6Vvdo/tJsWSUs/z2KnVTCq3IE8+uledcQ7TPeQi4S7OO/mnUDYDpqKohsXDcYORCKe4vJm/QfvnW1gk7pLbk7UMWMfcJhFHQADSiHh+HeJd2J6LoBQde2Uz5NmUgjqDWFwtcrtm3VW+Yy/nRZdtzWJjcL7xUd4iPofyoKWAuD2yE6+8fgrnT4VHnMnxO/wDn8K5w498mNkbQ/wB0gn5mkviPD9/GgjjX5Vp8I1cDx6ba1nou2k/CtfglsG4gCiM0bjn1oNfFYZGvvmhWAOp18oE6GfrWBjbYR4G4A20ExyrW7SgLiG0jXrJH71rEvMC+s/TpG/lQW8ArZ11mdpM89PpWtxBpfXyOmxHOKzMCgDiPT9PlWliozHMAf8h89qCo1pCdFBnnoI02FUMXaAcAARz8ev0q69ySYHrp+z/81RxMl4bfTw5fD9mgspYWPe+dcqji/fOo6c+QilQb3/im0f8A2y/+4f8ADWbxDt6bqlf4cLPMPJ/7aCa9a+yzgVt7Iu3LClva5kuQzPmtvYgSIS0oLHumWfM2wTUPPLvGixnJH/F/lU/Cu0Js3Dc9mGJQqRmjeDMx4V69iOzGG9ncvXMJbLqHcSHKvmRnDOxIDkkAwohZygnWup2QwbkFcIml8oQoYjIl3EpJ1MSFWT4AaaCg8p4Z2rNm5cuC0GLxoWiInw13rQxfbwOyt/CqCqwYc97xML+9epoIpUBk3btj/uFA6Bv9NYGL4nnve1KxMSoO45wY0+FZlKgOk+0Jw4f2AOVMij2jaAkE8oMwOXXyD732ju3+4UDpnOvrl/c0BUqD0FftKIGX+GERH9of8NctfaSy/wD6yn/jPl+HpXn9Kg9CH2mGI/hl3n+0P+Gp7/2pFo/8oogRpcP+GvNqVB6N/wCJ+muEU9f5h1/6KsWftZK7YRf/AHD/AIK8xpUBG3ahizN7Md5ix725Ykk7dTUn/wBV8jYU+bf6aGKVASjtLbGowyA/3v8ATUV/tAjjXDqPENr/ANtD9Kg2cPxsoAAg02k6esDWrGI7TMz5ggVYHcUwJG50HOh6lQE79rGOnsxA/q/01Fc7Sz/uh/zf6aHaVBrnjAzFhbAJEE5uWnh4CoTxM/hHx/yrOpUGieJn8Pz/AMqu8O7Qm04b2YaDMTA+lYNKgJOJdqWu3C5tKJYHLMggGcp01HKquL40HcstpUGkKCIEADkoGp12rFrY4PhXdXC4Y34KyRPdmY1XYtqBPTagda46VM5JP974TpVq52pJ/wB2PVp/Kpb2DZWSMA6kyIIYlmAYlVDBgYCnlOh8qS8OvKGnAM3eOsEgSfdWB3h3TGp5xQZ542ZnIN+ZkemlRvxgls2X/q/yrXtWrjZSvD5EyYWQZBgTl0HPfaOVC9xCCQQQQYIOhBG4NBovxckk5B8f8q5WXSoFVmzjbiCEuOomYViBO0wDvHOlSoHHiV4iDduRERnaI10321PxNavA+1eIwxZkKuzfeuguVMkllzHQkkknrSpUA/SpUqBUqVKgVKlSoFSpUqBUqVKgVKlSoFSpUqBUqVKgVKlSoFSpUqBUqVKgVKlSoFVixinScjsswTlYiSNiY6SaVKgkHEr3/q3NJjvtz3586kTit8MG9rclSCJYmCNiATEjl0pUqCIcSvRHtbkdM7Rz5T4n41XdiTJMk6knWTSpUDKVKlQf/9k=');
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: 100%;
+
+      }
+   </style>
+</head>
+
+<body style="background-color: black; color: aliceblue; ">
+   <center>
+      <h1 style="background-color: black;  color: rgb(255, 253, 253); margin: 50px;"> Periodic Table Elements </h1>
+   </center>
+   <table border="I">
+      <tbody>
+         <tr>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);""> 1 <br> H <br> Hydrogen</td>
+          <td colspan=" 16" style="empty-cells: hide;"></td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 2 <br> He <br> Helium </td>
+         </tr>
+         <tr>
+            <td style="text-align: center;  background-color: rgb(3, 3, 3);"> 3 <br> Li <br> Lithium </td>
+            <td style="text-align: center;  background-color: rgb(3, 3, 3);"> 4 <br> Be <br> Beryllium </td>
+            <td colspan="10" style="empty-cells: hide;"></td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 5 <br> B <br> Boron </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 6 <br> C <br> Carbon </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 7 <br> N <br> Nitrogen </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 8 <br> O <br> Oxygen </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 9 <br> F <br> Fluorine </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 10 <br> Ne <br> Neon </td>
+         </tr>
+         <tr>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 11 <br> Na <br> Soudium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 12 <br> Mg <br> Magnesium </td>
+            <td colspan="10" style="empty-cells: hide;"></td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 13 <br> Al<br> Aluminum </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 14 <br> Si <br> Silicon </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 15 <br> P <br> Phosphorous </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 16 <br> S <br> Sulfer </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 17 <br> Cl <br> chlorine </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 18 <br> Ar <br> Argon </td>
+         </tr>
+         <tr>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 19 <br> K <br> potassium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 20 <br> Ca <br> Calcium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);""> 21 <br> Sc <br> Scandium </td>
+        <td style=" text-align: center; background-color: rgb(3, 3, 3);"> 22 <br> Ti <br> Titanium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 23 <br> V <br> vanadium </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 24 <br> Cr <br> Chromium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 25 <br> Mn <br> Manganse </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 26 <br> Fe <br> Iron </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 27 <br> Co <br> Coblat </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 28 <br> Ni <br> Nickal </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 29 <br> Cu <br> Copper </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 30 <br> Zn <br> Zinc </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 31 <br> Ga <br> Gallium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 32 <br> Ge <br> Germanium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 33 <br> As <br> Arsenic </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 34 <br> Se <br> Seleium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 35 <br> Br <br> Bromine </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 36 <br> Kr <br> Krypton </td>
+         </tr>
+         <tr>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 37 <br> Rb <br> Rubidium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 38 <br> Sr <br> Strontium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);""> 39 <br> Y <br> yittrium </td>
+        <td style=" text-align: center; background-color: rgb(41, 37, 37);""> 40 <br> Zr <br> Zirconium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 41 <br> Nb <br> Niobium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 42 <br> Mo <br> molybdenium </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 43 <br> Tc <br> Technetium </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 44 <br> Ru <br> Ruthenium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 45 <br> Rh <br> Rhodium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 46 <br> Pb <br> Palladium </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 47 <br> Ag <br> Silver </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 48 <br> Cd <br> Cadmium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 49 <br> In <br> Indium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 50 <br> Sn <br> Tin </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 51 <br> Sb <br> Antimony </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 52 <br> Te <br> Tellurium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 53 <br> l <br> Iodine </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 54 <br> Xe <br> Xemon </td>
+         </tr>
+         <tr>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);""> 55 <br> Cs <br> Caesium </td>
+        <td style=" text-align: center; background-color: rgb(3, 3, 3);"> 56 <br> Ba <br> Barium </td>
+            <td style="text-align: center;background-color: rgb(3, 3, 3); "> 57-71 <br> La-Lu <br> Lanthanides </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);""> 72 <br> Hf <br> Hafnium </td>
+        <td style=" text-align: center; background-color: rgb(41, 37, 37);""> 73 <br> Ta <br> Tantalum </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 74 <br> W <br> Tungsten </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 75 <br> Re <br> Rhenium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 76 <br> Os <br> osmium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 77 <br> Ir <br> Iridium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 78 <br> Pt <br> Platinum </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 79 <br> Au <br> Gold </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 80 <br> Hg <br> Mercury </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 81 <br> Ti <br> Thallium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 82 <br> Pb <br> Lead </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 83 <br> Bi <br> Bismuth </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 84 <br> Po <br> Polonium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 85 <br> At <br> Astatine </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 86 <br> Rn <br> Radon </td>
+         </tr>
+         <tr>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 87 <br> Fr <br> Francium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 88 <br> Ra <br> Radium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 89-103 <br> Ac-Lr <br> actinides </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 104 <br> Rf <br> Rutherfordium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);""> 105 <br> Db <br> Dubnium </td>
+        <td style=" text-align: center; background-color: rgb(41, 37, 37);""> 106 <br> Sg <br> Seaborgium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 107 <br> Bh <br> Bohrium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 108 <br> Hs <br> Hassium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 109 <br> Mt <br> Meitnerium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 110 <br> Ds <br> Darmstadtium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 111 <br> Rg <br> Roentgenium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 112 <br> Cn <br> Copernicium </td>
+            <td style="text-align: center;  background-color: rgb(41, 37, 37);"> 113 <br> Uut <br> Ununtrium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 114 <br> Uuq <br> Ununquadium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 115 <br> Uup <br> Ununpentium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 116 <br> uuh <br> ununhexium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 117 <br> Uus <br> Ununseotium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 118 <br> Uuo <br> Ununoctium </td>
+         </tr>
+      </tbody>
+   </table>
+   <table border="I"
+      style=" border: 3px solid red; font-family: 'Courier New'; margin-left: 350px; border-radius: 10px;">
+      <tbody>
+         <tr>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 57 <br> La <br> Lanthanum </td>
+            <td style="text-align: center ; background-color: rgb(3, 3, 3);"> 58 <br> Ce <br> Cerium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 59 <br> PR <br> Praseodymium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 60 <br> Nd <br> Neodymium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 61 <br> Pm <br> Promethum </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 62 <br> Sm <br> Samarium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 63 <br> Eu <br> Europium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 64 <br> Gd <br> Gadolinium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 65 <br> Tb <br> terbium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 66 <br> Dy <br> Dysprosium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 67 <br> Ho <br> Holmium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 68 <br> Er <br> Erbium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 69 <br> Tm <br> Thulium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 70 <br> Yb <br> Ytterbium </td>
+            <td style="text-align: center; background-color: rgb(3, 3, 3);"> 71 <br> Lu <br> Lutetium </td>
+         </tr>
+         <tr>
+            <td style="text-align: center; background-color: rgb(3, 3, 3); "> 89 <br> Ac <br> Actinium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 90 <br> Th <br> Thorium </td>
+            <td style="text-align: center;  background-color: rgb(3, 3, 3);"> 91 <br> pa <br> Protactinium </td>
+            <td style="text-align: center;  background-color: rgb(3, 3, 3);"> 92 <br> U <br> Uranium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 93 <br> Np <br> Neptunium </td>
+            <td style="text-align: center;  background-color: rgb(3, 3, 3);"> 94 <br> Pu <br> Plutonium </td>
+            <td style="text-align: center;  background-color: rgb(3, 3, 3);"> 95 <br> Am <br> Americium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 96 <br> Cm <br> Curium </td>
+            <td style="text-align: center;  background-color: rgb(3, 3, 3);"> 97 <br> Bk <br> Berkelium </td>
+            <td style="text-align: center;  background-color: rgb(3, 3, 3);"> 98 <br> Cf <br> Californium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 99 <br> Es <br> Einsteinium </td>
+            <td style="text-align: center;  background-color: rgb(3, 3, 3);"> 100 <br> Fm <br> Fermium </td>
+            <td style="text-align: center;  background-color: rgb(3, 3, 3);"> 101 <br> Md <br> Mendelevium </td>
+            <td style="text-align: center; background-color: rgb(41, 37, 37);"> 102 <br> No <br> Nobelium </td>
+            <td style="text-align: center;  background-color: rgb(3, 3, 3);"> 103 <br> Lr <br> Lawrencium </td>
+         </tr>
+      </tbody>
+   </table>
+</body>
+
+</html>
